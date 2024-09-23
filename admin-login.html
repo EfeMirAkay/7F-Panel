@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Girişi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Girişi</h2>
+        <form onsubmit="return validateAdminLogin()">
+            <label for="admin-username">Kullanıcı Adı:</label>
+            <input type="text" id="admin-username" name="admin-username" required>
+            
+            <label for="admin-password">Şifre:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+            
+            <button type="submit">Giriş</button>
+        </form>
+    </div>
+
+    <script>
+        function validateAdminLogin() {
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+
+            // Statik admin adı ve şifre kontrolü
+            if (username === "efemirakay" && password === "Kz-1234ABmrAk") {
+                window.location.href = "admin-panel.html";  // Başarılı girişte admin paneline yönlendirme
+                return false;
+            } else {
+                alert("Admin kullanıcı adı veya şifre yanlış!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

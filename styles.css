@@ -1,0 +1,161 @@
+/* Genel Ayarlar */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Giriş ve Admin Girişi Sayfaları */
+.login-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label, .login-container input {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.login-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5b9bd5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #4a86c5;
+}
+
+/* Ana Menü Sayfası */
+.menu-container {
+    text-align: center;
+}
+
+.center-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #5b9bd5;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.center-button:hover {
+    background-color: #4a86c5;
+}
+
+/* Seçenekler Sayfası */
+.options-container {
+    text-align: center;
+}
+
+.options-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.options-container ul li {
+    margin-bottom: 15px;
+}
+
+.options-container ul li a {
+    color: #5b9bd5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.options-container ul li a:hover {
+    color: #4a86c5;
+}
+
+/* İçerik Sayfaları */
+.homeworks-container, .schedule-container, .exam-dates-container {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Admin Paneli Stil */
+.admin-panel-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    color: white;
+}
+
+.admin-section {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5b9bd5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4a86c5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    background-color: #333;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

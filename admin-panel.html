@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Sınıf Yönetimi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="admin-panel-container">
+        <h2>Admin Panel</h2>
+
+        <!-- Ödevler -->
+        <div class="admin-section">
+            <h3>Ödevler</h3>
+            <textarea id="homework-input" placeholder="Yeni ödev ekleyin"></textarea>
+            <button onclick="addHomework()">Ödev Ekle</button>
+            <ul id="homework-list"></ul>
+        </div>
+
+        <!-- Ders Programı -->
+        <div class="admin-section">
+            <h3>Ders Programı</h3>
+            <textarea id="schedule-input" placeholder="Ders programını düzenleyin"></textarea>
+            <button onclick="updateSchedule()">Ders Programını Güncelle</button>
+            <p id="schedule-output"></p>
+        </div>
+
+        <!-- Sınav Tarihleri -->
+        <div class="admin-section">
+            <h3>Sınav Tarihleri</h3>
+            <textarea id="exam-input" placeholder="Sınav tarihlerini ekleyin"></textarea>
+            <button onclick="updateExams()">Sınav Tarihlerini Güncelle</button>
+            <p id="exam-output"></p>
+        </div>
+
+        <!-- Öğrenci Listesi -->
+        <div class="admin-section">
+            <h3>Öğrenci Listesi</h3>
+            <textarea id="student-list-input" placeholder="Öğrenci listesini düzenleyin"></textarea>
+            <button onclick="updateStudentList()">Öğrenci Listesini Güncelle</button>
+            <ul id="student-list"></ul>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
